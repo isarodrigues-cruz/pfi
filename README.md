@@ -32,5 +32,5 @@
 ##
 <div align='center'>
 <h3 style='font-size: 2rem'>🧾 Resultado</h3>
-   <img src='./public/img/tela_site.png' style='width: 100%;'>
+   <img src='./Isa/public/img/tela_site.png' style='width: 100%;'>
 </div>
