@@ -1,0 +1,35 @@
+<!-- Titulo -->
+<title>Cadastro</title>
+
+<!-- Style -->
+{{>signStyle}}
+
+<!-- Body -->
+<div class="register-photo">
+    <div class="cad">
+        {{#each erros}}
+            <div class="alert alert-danger">{{msg}}</div>
+            {{else}}
+        {{/each}}
+        <div class="form-container">
+            <div class="image-holder"></div>
+            <form action="/user/cadastro" method="post">
+                <h2 class="text-center"><strong>Cadastro</h2>
+                    <div class="form-group"><input class="form-control"
+                            type="text"
+                            name="inName" placeholder="Nome"></div>
+                    <div class="form-group"><input class="form-control"
+                            type="email"
+                            name="inEmail" placeholder="Email"></div>
+                    <div class="form-group"><input class="form-control"
+                            type="password" name="inPassword"
+                            placeholder="Senha"></div>
+                    <div class="form-group">
+                        <div class="form-group"><button
+                                class="btn btn-primary btn-block" type="submit">Cadastrar</button></div>
+                        <a href="/user/login"></a></form>
+                    <a class="already" href="/user/login">Já possui cadastro?
+                        Logar</a>
+                </div>
+            </div>
+        </div>
