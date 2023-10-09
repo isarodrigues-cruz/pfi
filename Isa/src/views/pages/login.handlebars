@@ -1,0 +1,44 @@
+<!-- Titulo -->
+<title>Login</title>
+
+<!-- Style -->
+{{>signStyle}}
+
+<!-- Body -->
+<div id="content" class="register-photo">
+    <div class="cad">
+        {{#each erros}}
+        <div class="alert alert-danger">{{msg}}</div>
+        {{/each}}
+        <div class="form-container">
+            <div class="image-holder"></div>
+            <form method="post">
+                <h2 class="text-center">Login</h2>
+                    {{#if isUser}}
+                    <div class="form-group"><input class="form-control"
+                            type="email" name="inEmail" placeholder="Email"
+                            disabled></div>
+                    <div class="form-group"><input class="form-control"
+                            type="password" name="inPassword"
+                            placeholder="Senha" disabled></div>
+                    <div class="form-group" disabled>
+                        <div class="form-group btn"><button
+                                class="btn btn-primary btn-block" type="submit"
+                                disabled>Logar</button></div>
+                        {{else}}
+                        <div class="form-group"><input class="form-control"
+                                type="email" name="inEmail" placeholder="Email"></div>
+                        <div class="form-group"><input class="form-control"
+                                type="password" name="inPassword"
+                                placeholder="Senha"></div>
+                        <div class="form-group">
+                            <div class="form-group btn"><button
+                                    class="btn btn-primary btn-block"
+                                    type="submit">Logar</button></div>
+                            {{/if}}
+                            <a class="already" href="/user/cadastro">Não possui
+                                cadastro? Cadastrar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>

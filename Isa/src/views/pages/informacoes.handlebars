@@ -1,0 +1,18 @@
+<!-- Titulo -->
+<title>Saúde</title>
+
+
+<!-- Body -->
+<h1>EM QUAL PARTE DO SEU CORPO VOCÊ POSSUI PROBLEMAS DE SAÚDE?</h1>
+<div class="container-info">
+  {{#each infos}}
+    <div class="image-with-text">
+      <p class="texto1"> {{ info.title }} </p>
+      <div style="text-align: center;">
+        <a href=" {{ info.link }} ">
+          <img src=" {{ info.image }} ">
+        </a>
+      </div>
+    </div>
+    {{/each}}
+</div>

@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+
+  </div>
+  <h1 class="navbar-title">Cozinha Consciente</h1>
+  <ul class="navbar-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/user/login">Login</a></li>
+    <li><a href="/user/cadastro">Cadastro</a></li>
+    <li><a href="/informacoes">Informações</a></li>
+  </ul>
+</nav>
+<script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarLinks = document.querySelector('.navbar-links');
+    
+        navbarToggle.addEventListener('click', () => {
+          navbarLinks.classList.toggle('active');
+        });
+      </script>
